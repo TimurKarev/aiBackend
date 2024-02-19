@@ -19,12 +19,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-
+TIM_TWITTER_API_KEY = os.getenv('TIM_TWITTER_API_KEY')
+TIM_TWITTER_API_SECRET = os.getenv('TIM_TWITTER_API_SECRET')
+TIM_TWITTER_ACCESS_TOKEN = os.getenv('TIM_TWITTER_ACCESS_TOKEN')
+TIM_TWITTER_ACCESS_TOKEN_SECRET = os.getenv('TIM_TWITTER_ACCESS_TOKEN_SECRET')
+TIM_BEARER_TOKEN = os.getenv('TIM_BEARER_TOKEN')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-cqgt!g&+l=p_%3ktj%!%9=2faw6yxsvfj*0$l3_$_0pm@(fb0('
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
